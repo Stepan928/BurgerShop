@@ -1,0 +1,133 @@
+/* Cart */
+.cart__nav{
+	padding-top: 35px;
+	ul{
+		margin-top: -3px;
+		li a{
+			color: $black;
+		}
+	}
+}
+.nav__burger-cart{
+	span, &::before, &::after{
+		background: $black;
+	}
+}
+ul.open{
+	li a {
+		color: white;
+	}
+}
+@media (max-width: 1025px){
+	.cart__nav ul{
+		margin-top: 30px;
+	}
+	.nav__logo-cart{
+		margin-bottom: -10px;
+	}
+}
+.progress{
+	&__box{
+		max-width: 1200px;
+		border-radius: 100px;
+		background-color: rgba(255,57,57,0.07);
+		display: flex;
+		justify-content: space-between;
+		margin: 180px auto 0;
+	}
+	&__item{
+		width: calc(100% / 3);
+		color: rgba(255,57,57,0.5);
+		text-align: center;
+		border-radius: 100px;
+		line-height: 40px;
+		font-weight: bold;
+		&:nth-child(1){
+			color: $white;
+			background-color: $orangeColor;
+		}
+	}
+}
+.empty{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 160px;
+	padding: 0 30px;
+	&__box{
+		position: relative;
+		i{
+			color: $white;
+			font-size: 23px;
+		}
+	}
+	&__cancel{
+		@include hw(40px, 40px);
+		background-color: #3a3a3a;
+		border-radius: 100px;
+		@include flex;
+		position: absolute;
+		right: 0;
+		margin: -27px -15px 30px 0;
+		animation: spin 4s ease forwards;
+		transform: rotate(-180deg);
+	}
+	h2{
+		color: $black;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 700;
+		margin-top: 45px;
+	}
+	p{
+		color: #8d8d8d;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 500;
+		margin: 15px 0 35px;
+	}
+	&__button{
+		background-color: $orangeColor;
+		border-radius: 10px;
+		a{
+			color: $white;
+			font-weight: bold;
+			line-height: 50px;
+			padding: 0 30px;
+		}
+	}
+}
+@keyframes spin {
+	100% {
+		transform:rotate(0deg);
+	}
+}
+@media (max-width: 1350px) {
+	.progress__box{
+		max-width: 1000px;
+	}
+}
+@media (max-width: 1130px) {
+	.progress__box{
+		max-width: 890px;
+	}
+}
+@media (max-width: 1025px) {
+	.progress__box{
+		margin-top: 120px;
+	}
+}
+@media (max-width: 974px) {
+	.progress{
+		margin: 0 50px;
+	}
+}
+@media (max-width: 767px) {
+	.progress{
+		margin: 0 20px;
+	}
+	.empty{
+		margin-top: 100px;
+	}
+}
+/* Cart */

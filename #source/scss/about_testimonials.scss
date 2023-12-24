@@ -1,0 +1,146 @@
+/* About & Testimonials */
+.info{
+	color: $white;
+	background: $black;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 8px;
+	@include font3(12px, 700, 25px);
+	&__about{
+		width: 94px;
+	}
+	&__testimonials{
+		width: 120px;
+	}
+}
+.about{
+	display: flex;
+	justify-content: center;
+	padding-top: 160px;
+	&__section{
+		width: 50%;
+	}
+	&__img{
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 60px;
+		img{
+			border-radius: 20px;
+		}
+	}
+	&__text{
+		@include hw(100%, 600px);
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding-left: 60px;
+		h2{
+			color: $black;
+			@include font3(60px, 700, 110%);
+			margin: 25px 0 50px;
+		}
+		span{
+			color: $greyColor;
+			font-weight: 700;
+			margin-top: 20px;
+		}
+		img{
+			width: 65px;
+			margin-bottom: 15px;
+		}
+	}
+}
+#testimonials{
+	margin-bottom: 225px;
+}
+@media(max-width: 1700px){
+	.about__img{
+		padding-right: 40px;
+		img{
+			width: 520px;
+		}
+	}
+	.about__text{
+		width: 520px;
+		padding-left: 40px;
+		h2{
+			font-size: 50px;
+		}
+	}
+	#testimonials{
+		margin-bottom: 140px;
+	}
+}
+@media(max-width: 1250px){
+	.about{
+		&__img{
+			padding-right: 20px;
+			img{
+				width: 370px;
+			}
+		}
+		&__text{
+			width: 382px;
+			padding-left: 20px;
+			h2{
+				font-size: 40px;
+				margin: 20px 0 35px;
+			}
+			p, span{
+				font-size: 17px;
+				line-height: 160%;
+			}
+		}
+	}
+}
+@media(max-width: 850px){
+	.about{
+		align-items: center;
+		flex-direction: column;
+		padding-top: 90px;
+		&__section{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		&__img{
+			width: 83%;
+			padding: 0;
+			img{
+				width: 100%;
+			}
+		}
+		&__text{
+			padding: 0;
+			width: 80%;
+			p{
+				line-height: 180%;
+			}
+		}
+	}
+	#about{
+		flex-direction: column-reverse;
+		span{
+			margin-bottom: 35px;
+		}
+		p{
+			margin-bottom: 10px;
+		}
+	}
+	#testimonials{
+		.info{
+			margin-top: 75px;
+		}
+	}
+}
+@media(max-width: 381px){
+	#testimonials h2{
+		font-size: 33px;
+	}
+}
+@media(max-width: 354px){
+	.about h2{
+		font-size: 35px;
+	}
+}
+/* About & Testimonials */

@@ -1,0 +1,32 @@
+/* Gallery */
+.gallery{
+	display: flex;
+	&__item{
+		width: 100%;
+		display: flex;
+		img{
+			width: 50%;
+		}
+	}
+}
+@media(max-width: 850px){
+	.gallery{
+		flex-direction: column;
+		&__item:first-child{
+			margin-bottom: 25px;
+		}
+	}
+}
+@media(max-width: 440px){
+	.gallery__item{
+		flex-direction: column;
+		&:first-child{
+			margin: 0;
+		}
+		img{
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
+}
+/* Gallery */

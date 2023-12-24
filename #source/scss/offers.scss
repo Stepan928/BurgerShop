@@ -1,0 +1,190 @@
+/* Offers */
+.offers{
+	width: 1245px;
+	margin: 0 auto;
+	padding-bottom: 190px;
+	box-sizing: border-box;
+	&__title{
+		color: $black;
+		@include font3(60px, 700, 110%);
+		padding: 160px 0 70px;
+	}
+	&__container{
+		display: flex;
+		height: 100%;
+	}
+	&__big{
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0 80px;
+		img{
+			margin: 55px 0 32px;
+		}
+		h2{
+			color: $black;
+			@include font3(40px, 700, 110%);
+		}
+	}
+	&__adv-block{
+		@include hw(25px, 125px);
+		color: $white;
+		background-color: $orangeColor;
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 8px;
+		@include font3(12px, bold, 25px);
+	}
+	&__ingredient{
+		width: 100%;
+		display: flex;
+		margin: 24px 0 18px;
+		flex-wrap: wrap;
+		&--item{
+			color: #7b7b7b;
+			border: 2px solid #f4f4f4;
+			border-radius: 18px;
+			@include font3(14px, 800, 32px);
+			padding: 2px 26px;
+			&:nth-child(2){
+				margin: 0 15px;
+			}
+		}
+	}
+	&__block{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 45px;
+		a{
+			color: $white;
+			background-color: $black;
+			text-transform: uppercase;
+			border-radius: 22px;
+			font-size: 14px;
+			font-weight: 800;
+			@include flex;
+			padding: 4px 25px;
+			transition: all .4s ease-in-out;
+			&::before{
+				height: 27px;
+				content: url('../img/offers/plus.png');
+				margin-right: 15px;
+			}
+			&:hover{
+				background-color: $orangeColor;
+			}
+		}
+	}
+	&__price{
+		color: $black;
+		@include font3(40px, 700, 110%);
+	}
+	&__small{
+		width: 50%;
+	}
+	&__box{
+		@include hw(48.6%, 100%);
+		display: flex;
+		justify-content: space-between;
+		&--distance{
+			margin-bottom: 22px;
+		}
+	}
+	&__small--item{
+		@include hw(100%, 48.2%);
+		background-color: $productColor;
+		border-radius: 20px;
+		@include flex;
+		flex-direction: column;
+		padding: 40px 0 32px;
+		h2{
+			color: $black;
+			text-align: center;
+			@include font3(21px, 700, 140%);
+			margin: 25px 0 21px;
+		}
+		div{
+			color: $white;
+			background-color: $orangeColor;
+			border-radius: 15px;
+			@include font3(20px, 700, 33px);
+			padding: 1px 15px;
+			margin-bottom: 18px;
+		}
+	}	
+}
+.add-to-cart{
+	color: $black;
+	@include font3(15px, 700, 34px);
+	transition: .4s;
+	&::before{
+		content: "\2b";
+		font-size: 20px;
+		font-weight: 700;
+		padding-right: 5px;
+	}
+	&:hover{
+		color: $orangeColor;
+	}
+}
+@media (max-width: 1360px){
+	.offers{
+		width: 1110px;
+	}
+}
+@media (max-width: 1250px){
+	.offers{
+		width: 100%;
+		padding-bottom: 150px;
+		&__title{
+			text-align: center;
+			padding-top: 100px;
+		}
+		&__container{
+			align-items: center;
+			flex-direction: column;
+		}
+		&__big{
+			width: 65%;
+			padding: 0;
+			margin-bottom: 50px;
+		}
+		&__small{
+			width: 70%;
+		}
+	}
+}
+@media (max-width: 850px){
+	.offers{
+		padding: 0 7%;
+		&__title{
+			font-size: 52px;
+		}
+		&__big{
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		&__small{
+			width: 100%;
+			&--item{
+				width: 100%;
+				margin-bottom: 40px;
+			}
+		}
+		&__box{
+			flex-direction: column;
+			margin: 0;
+		}
+		&__last{
+			margin-bottom: 55px;
+		}
+	}
+}
+@media (max-width: 456px){
+	.ingredient-last{
+		margin-top: 20px;
+	}
+}
+/* Offers */

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<!-- SEO Meta Tags -->
+	<meta name="description" content="Jevelin is multi-purpose theme for creating stunning websites. Features all the right tools needed for your next design.">
+	<meta name="keywords" content="agency, blog, business, corporate, creative, fitness, flat, modern, portfolio, responsive, shufflehound, startup, theme, wedding, wordpress, jevelin, multi-purpose, theme, themes">
+	<meta name="author" content="Stepan Khachatryan">
+	<meta name="Copyright" content="Stepan Khachatryan">
+	<!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="Jevelin Burger Shop">
+	<meta property="og:title" content="Jevelin Burger Shop">
+	<meta property="og:description" content="Jevelin is multi-purpose theme for creating stunning websites.">
+	<meta property="og:image" content="../img/Jevelin-Burger-Shop.jpg">
+	<meta property="og:url" content="https://stepan928.github.io/BurgerShop/">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<!-- Webpage Title -->
+	<title>Cart - Jevelin Burger Shop</title>
+	<!-- Styles -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="icon" href="../img/nav/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<!-- Preload -->
+	<div id="preloader"></div>
+
+	<!-- Navigation -->
+	<header class="nav cart__nav">
+		<div class="nav__icons">
+			<a href="../index.html#home" class="nav__logo nav__logo-cart"><img src="../img/nav/logo-dark.png" alt="Jevelin" draggable="false"></a>
+			<a href="../index.html#home" class="nav__logo-dark"><img src="../img/nav/logo-dark.png" alt="Jevelin" draggable="false"></a>
+			<div class="nav__mobile">
+				<div class="nav__burger nav__burger-cart"><span></span></div>
+				<div class="nav__cart">
+					<a href="cart.html">
+						<img src="../img/nav/cart.png" alt="Cart" draggable="false">
+						<div class="nav__badge nav__badge2"><span>0</span></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<ul>
+			<li><a href="../index.html#home">Home</a></li>
+			<li><a href="../index.html#about">About</a></li>
+			<li><a href="../index.html#offers">Offers</a></li>
+			<li><a href="../index.html#menu">Menu</a></li>
+			<li><a href="../index.html#trending">Trending</a></li>
+			<li><a href="../index.html#contact">Contact</a></li>
+			<li class="nav__purchase-icons" id="purchase">
+				<a href="cart.html">
+					<img src="../img/nav/bag-dark.png" class="nav__bag" alt="Cart" draggable="false">
+					<img src="../img/nav/bag-dark.png" class="nav__bag-dark" alt="Cart" draggable="false">
+					<div class="nav__badge"><span>0</span></div>
+				</a>
+			</li>
+		</ul>
+	</header>
+
+ 	<!-- Progress -->
+	<div class="progress">
+		<div class="progress__box">
+			<div class="progress__item">View Cart</div>
+			<div class="progress__item">Checkout</div>
+			<div class="progress__item">Done</div>
+		</div>
+	</div>
+
+	<!-- Nothing in cart -->
+	<div class="empty">
+		<div class="empty__box">
+			<img src="../img/cart/cart.png" alt="Cart" draggable="false">
+			<div class="empty__cancel"><i class="fa-solid fa-xmark"></i></div>
+		</div>
+		<h2>Ops! There is nothing in your cart</h2>
+		<P>Explore around to add items to your shopping cart</P>
+		<div class="empty__button"><a href="../index.html">Return to shop</a></div>
+	</div>
+
+	<!-- Contact -->
+	<div class="contact" id="contact">
+		<div class="contact__section">
+			<div class="contact__content contact__mobile">
+				<img src="../img/nav/logo-dark.png" alt="Jevelin" draggable="false">
+				<p class="contact__desc">It’s burger time. Yes, the burger is the best snack when people feel hungry and want to have some tasty food.</p>
+				<div class="contact__socials">
+					<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=ru"><i class="fa-brands fa-twitter"></i></a>
+				</div>
+			</div>
+
+			<div class="contact__content contact__text">
+				<h4 class="contact__title">Contact us</h4>
+				<div><img src="../img/contact/geo.png" alt="Geolocation" draggable="false"><p>City Hall Park, New York</p></div>
+				<div><img src="../img/contact/phone.png" alt="Telephone" id="phone" draggable="false"><p>(647) 346-3241</p></div>
+				<div><img src="../img/contact/mail.png" alt="Mail" draggable="false"><p>email@jevelinburger.com</p></div>
+				<div><img src="../img/contact/mail.png" alt="Mail" draggable="false"><p>email2@jevelinburger.com</p></div>
+			</div>
+
+			<div class="contact__content contact__sub">
+				<h4 class="contact__title">Subscribe</h4>
+				<input type="email" name="email" placeholder="Enter your email here..." class="contact__input">
+				<input type="submit" value="Subscribe" class="big-button contact__button">
+				<p>Get the latest special offers</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Map -->
+	<div class="map"></div>
+
+	<!-- Top Button -->
+	<a href="#" class="to-top"><i class="fa-solid fa-angle-up"></i></a>
+	<!-- Scripts -->
+	<script src="../js/script.js"></script>
+	<script src="https://kit.fontawesome.com/bbf798ce9b.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true,
+		});
+	</script>
+</body>
+</html>

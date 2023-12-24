@@ -1,0 +1,143 @@
+/* Contact */
+.contact{
+	padding: 219px 0 150px;
+	&__section{
+		width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	&__content{
+		@include hw(100%, calc(100% / 3 - 25px));
+		p{
+			margin: 15px 0 30px;
+		}
+	}
+	&__desc{
+		width: 330px;
+	}
+	&__socials{
+		i{
+			color: $orangeColor;
+			font-size: 27px;
+			margin: 0 7px;
+		}
+	}
+	&__text{
+		div{
+			display: flex;
+			align-items: center;
+			margin: 11px 0;
+			img{
+				width: 20px;
+			}
+			#phone{
+				width: 23px;
+				margin-left: -1px;
+			}
+		}
+		p{
+			margin: 0 0 0 15px;
+		}
+	}
+	&__title{
+		color: #212529;
+		font-size: 26px;
+		font-weight: 700;
+	}
+	&__sub{
+		text-align: center;
+		p{
+			color: #858585;
+			font-size: 16px;
+			margin: 0;
+		}
+	}
+	&__input{
+		@include hw(56px, 100%);
+		background: #F4F4F4;
+		text-align: center;
+		border-radius: 28px;
+		@include font3(17px, 400, 56px);
+		margin-top: 20px;
+		transition: .3s;
+		&::placeholder{
+			color: #8D948D;
+		}
+		&:focus{
+			box-shadow: rgba(0, 0, 0, 0.07)
+			0px 1px 1px, rgba(0, 0, 0, 0.07)
+			0px 2px 2px, rgba(0, 0, 0, 0.07)
+			0px 4px 4px, rgba(0, 0, 0, 0.07)
+			0px 8px 8px, rgba(0, 0, 0, 0.07)
+			0px 16px 16px;
+		}
+	}
+	&__button{
+		width: 100%;
+		margin: 18px 0 20px;
+		&:hover{
+			background: $black;
+			border: 2px solid $black;
+		}
+	}
+}
+.map{
+	@include hw(480px, 100%);
+	background: url("../img/contact/map.svg") no-repeat center center;
+	background-size: cover;
+}
+@media(max-width: 1350px){
+	.contact__section{
+		width: 1000px;
+	}
+	.contact__desc{
+		width: 290px;
+	}
+}
+@media(max-width: 1130px){
+	.contact__section{
+		width: 890px;
+	}
+	.contact__desc{
+		width: 260px;
+	}
+}
+@media(max-width: 973px){
+	.contact{
+		padding: 120px 0 50px;
+		&__section{
+			width: 100%;
+			flex-direction: column;
+		}
+		&__content{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 0 30px;
+		}
+		&__mobile{
+			max-width: 635px;
+			margin: 0 auto;
+		}
+		&__desc{
+			width: 100%;
+			text-align: center;
+			padding-top: 15px;
+		}
+		&__text{
+			margin: 50px 0;
+			div{
+				margin: 5px 0;
+			}
+			.contact__title{
+				margin-bottom: 20px;
+			}
+		}
+		&__input, &__button{
+			max-width: 550px;
+		}
+	}
+}
+/* Contact */
