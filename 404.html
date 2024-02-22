@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta name="author" content="Stepan Khachatryan">
+	<meta name="Copyright" content="Stepan Khachatryan">
+	<title>Oops, something lost</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/404/favicon.png">
+</head>
+<body>
+	<h1 class="not_found">404</h1>
+	<img src="img/404/1.gif" alt="404 Not Found" class="not_found_img" draggable="false">
+	<h2 class="not_found_title">Oops! It seems like something went wrong.</h2>
+	<h3 class="not_found_desc">The page you're looking for might have ventured into the digital unknown.</h3>
+
+	<style>
+		body{
+			margin: 0;
+			box-sizing: border-box;
+			text-align: center;
+			font-family: "Montserrat", sans-serif;
+			font-weight: 600;
+			padding: 20px 15px 0;
+			line-height: 1;
+			user-select: none;
+		}
+		.not_found{
+			font-size: 130px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 40px;
+		}
+		.not_found_img{
+			max-width: 100%;
+		}
+		.not_found_title{
+			font-size: 32px;
+			margin: -120px 0 20px;
+		}
+		.not_found_desc{
+			font-size: 22px;
+			font-weight: 500;
+		}
+		@media (max-width: 930px){
+			.not_found_title{
+				font-size: 29px;
+			}
+			.not_found_desc{
+				font-size: 19px;
+			}
+		}
+		@media (max-width: 780px){
+			body{
+				padding-top: 40px;
+			}
+			.not_found_title{
+				font-size: 26px;
+			}
+			.not_found_desc{
+				font-size: 17px;
+			}
+		}
+		@media (max-width: 710px){
+			.not_found_img{
+				margin-top: 20px;
+			}
+			.not_found_title{
+				font-size: 24px;
+			}
+			.not_found_desc{
+				font-size: 15px;
+			}
+		}
+		@media (max-width: 670px){
+			.not_found_title{
+				margin-top: -100px;
+			}
+		}
+		@media (max-width: 630px){
+			.not_found{
+				font-size: 100px;
+			}
+			.not_found_title{
+				font-size: 21px;
+				line-height: 22px;
+				margin-bottom: 0;
+			}
+			.not_found_desc{
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		@media (max-width: 590px){
+			.not_found_title{
+				margin-top: -80px;
+			}
+		}
+		@media (max-width: 540px){
+			.not_found_img{
+				margin-top: 60px;
+			}
+		}
+		@media (max-width: 490px){
+			.not_found_img{
+				margin-top: 80px;
+			}
+			.not_found_title{
+				margin-top: -40px;
+			}
+		}
+		@media (max-width: 340px){
+			body{
+				padding-top: 0;
+			}
+		}
+	</style>
+</body>
+</html>

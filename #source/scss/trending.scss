@@ -1,0 +1,107 @@
+/* Trending & Dessert */
+.trending{
+	padding: 0 90px;
+	&__title{
+		color: $black;
+		@include font3(60px, 700, 110%);
+		padding: 160px 0 40px;
+	}
+	&__content{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__box{
+		width: 49.2%;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item{
+		width: 48.4%;
+		background-color: $productColor;
+		border-radius: 20px;
+		display: flex;
+		justify-content: center;
+		padding: 50px 15px 38px;
+		img{
+			width: 100%;
+		}
+		h3{
+			color: $black;
+			@include font3(26px, 700, 110%);
+			margin-top: 27px;
+		}
+		p{
+			margin: 15px 0 55px;
+		}
+	}
+	&__maxSize{
+		max-width: 320px;
+		position: relative;
+		div{
+			color: $white;
+			background-color: $orangeColor;
+			@include font3(20px, 700, 33px);
+			border-radius: 15px;
+			display: inline;
+			padding: 1px 15px;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	&__dessertTitle{
+		padding-top: 80px;
+	}
+}
+.add-to{
+	position: absolute;
+	right: 0; bottom: 0;
+}
+@media (max-width: 1250px) {
+	.trending{
+		padding: 0 7%;
+		&__title{
+			text-align: center;
+			padding-top: 100px;
+		}
+		&__dessertTitle{
+			padding-top: 80px;
+		}
+		&__content{
+			align-items: center;
+			flex-direction: column;
+		}
+		&__box{
+			width: 75%;
+			&:nth-child(1){
+				margin-bottom: 2.7%;
+			}
+		}
+	}
+}
+@media (max-width: 1050px) {
+	.trending__box{
+		width: 87%;
+	}
+}
+@media (max-width: 850px) {
+	.trending__title{
+		font-size: 52px;
+		margin-bottom: 20px;
+	}
+	.trending__dessertTitle{
+		padding-top: 50px;
+	}
+	.trending__box{
+		width: 100%;
+		flex-direction: column;
+		margin: 0;
+		&:nth-child(1){
+			margin-bottom: 0;
+		}
+	}
+	.trending__item{
+		width: 100%;
+		margin-bottom: 33px;
+	}
+}
+/* Trending & Dessert */

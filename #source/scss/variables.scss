@@ -1,0 +1,20 @@
+$white: #fff;
+$black: #000;
+$orangeColor: #FF3939;
+$greyColor: #515050;
+$greyBg: #171719;
+$productColor: #FCF8F7;
+@mixin hw($height, $width){
+	height: $height;
+	width: $width;
+}
+@mixin font3($fontSize, $fontWeight, $lineHeight){
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	line-height: $lineHeight;
+}
+@mixin flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
